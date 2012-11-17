@@ -1,0 +1,29 @@
+﻿      @{
+    Model.Detials.Add(new OrderDetial());
+    Model.Detials.Add(new OrderDetial());
+    Model.Detials.Add(new OrderDetial());
+        }
+         <div class="editor-label">
+            @Html.LabelFor(model => model.Date)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model=>model.Detials[0],"Dump",Model.Detials[0])
+        
+        </div>
+
+
+         <div class="editor-label">
+            @Html.LabelFor(model => model.Date)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model=>model.Detials[1],"Dump",Model.Detials[1])
+        
+        </div>
+
+           <div class="editor-label">
+            @Html.LabelFor(model => model.Date)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model=>model.Detials[2],"Dump",Model.Detials[2])
+        
+        </div>

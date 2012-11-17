@@ -1,0 +1,113 @@
+﻿@model KnockoutjsDemo1.Models.Order
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Order</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.BranchId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.BranchId)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.EmployeeId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.EmployeeId)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CustomerId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CustomerId)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.OrderDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.OrderDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TrackingNumber)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TrackingNumber)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TotalAmount)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TotalAmount)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.PaymentMethod)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PaymentMethod)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.PaymentDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PaymentDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.IsActive)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.IsActive)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.IsDeleted)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.IsDeleted)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Notes)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Notes)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.OrderStatus)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.OrderStatus)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.LastUpdate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.LastUpdate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.PaidAmount)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PaidAmount)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

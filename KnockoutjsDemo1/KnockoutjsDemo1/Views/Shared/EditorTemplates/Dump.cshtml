@@ -1,0 +1,27 @@
+﻿@model KnockoutjsDemo1.Models.OrderDetial
+
+<script src="~/Scripts/jquery-1.7.1.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+
+
+    <fieldset>
+        <legend>OrderDetial</legend>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ProductId)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ProductId)
+            @Html.ValidationMessageFor(model => model.ProductId)
+        </div>
+
+         <div class="editor-label">
+            @Html.LabelFor(model => model.Qty)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Qty)
+            @Html.ValidationMessageFor(model => model.Qty)
+        </div>
+
+    </fieldset>

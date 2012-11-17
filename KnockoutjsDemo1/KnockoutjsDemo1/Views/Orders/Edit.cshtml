@@ -1,0 +1,141 @@
+﻿@model KnockoutjsDemo1.Models.Order
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Order</legend>
+
+        @Html.HiddenFor(model => model.Id)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.BranchId)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.BranchId)
+            @Html.ValidationMessageFor(model => model.BranchId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.EmployeeId)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.EmployeeId)
+            @Html.ValidationMessageFor(model => model.EmployeeId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CustomerId)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CustomerId)
+            @Html.ValidationMessageFor(model => model.CustomerId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.OrderDate)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.OrderDate)
+            @Html.ValidationMessageFor(model => model.OrderDate)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.TrackingNumber)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.TrackingNumber)
+            @Html.ValidationMessageFor(model => model.TrackingNumber)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.TotalAmount)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.TotalAmount)
+            @Html.ValidationMessageFor(model => model.TotalAmount)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.PaymentMethod)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.PaymentMethod)
+            @Html.ValidationMessageFor(model => model.PaymentMethod)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.PaymentDate)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.PaymentDate)
+            @Html.ValidationMessageFor(model => model.PaymentDate)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.IsActive)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.IsActive)
+            @Html.ValidationMessageFor(model => model.IsActive)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.IsDeleted)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.IsDeleted)
+            @Html.ValidationMessageFor(model => model.IsDeleted)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Notes)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Notes)
+            @Html.ValidationMessageFor(model => model.Notes)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.OrderStatus)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.OrderStatus)
+            @Html.ValidationMessageFor(model => model.OrderStatus)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.LastUpdate)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.LastUpdate)
+            @Html.ValidationMessageFor(model => model.LastUpdate)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.PaidAmount)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.PaidAmount)
+            @Html.ValidationMessageFor(model => model.PaidAmount)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

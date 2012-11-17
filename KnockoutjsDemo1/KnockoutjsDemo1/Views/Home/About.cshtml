@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.Title = "Desc";
+}
+
+<hgroup class="title">
+    <h1>@ViewBag.Title.</h1>
+    <h2>@ViewBag.Message</h2>
+</hgroup>
+
+<article>
+    <ol>
+        <li>
+            update knockoutjs
+
+        </li>
+        <li>
+            Create your data model
+
+        </li>
+        <li>
+            Bind html tags with the model attributes and functions
+
+        </li>
+        <li>
+            Ssend the model to the backend as json
+        </li>
+        <li>
+            The model in js must have attributes with the same name of the backend attributes to be serialized and
+deserialized by the mvc
+        </li>
+        <li>
+            @Html.ActionLink("Create Order", "Create", "Orders", null, null)
+        </li>
+    </ol>
+</article>
+
+<aside>
+    <h3>Aside Title</h3>
+    <ul>
+        <li>
+            http://jsfiddle.net/jW68r/
+        </li>
+    </ul>
+    <ul>
+        <li>@Html.ActionLink("About", "About", "Home")</li>
+        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+    </ul>
+</aside>

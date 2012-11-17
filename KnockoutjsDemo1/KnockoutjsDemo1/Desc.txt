@@ -1,0 +1,7 @@
+﻿Knockoutjs Binding Demo
+1-update knockoutjs
+2- create your data model
+3- bind html tags with the model attributes and functions
+4- send the model to the backend as json
+5- the model in js must have attributes with the same name of the backend attributes to be serialized and
+deserialized by the mvc
